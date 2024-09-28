@@ -23,7 +23,7 @@ I am a bit of a lazy dumbass so you still need to use **fabric_loader_dependenci
   }
 }
 ```
-4. Play the game and hopefully have fun :)
+4. Play the game and hopefully have fun :) 
 
 
 ## normal readme below
