@@ -7,8 +7,8 @@ so i wasted some time looking up if anyone had forked it to work. I gave up on s
 ## Installation
 I am a bit of a lazy dumbass so you still need to use **fabric_loader_dependencies.json** to avoid errors on launch.
 
-1. Download 3.3.9.5-iris1.7.jar
-2. Put in mods folder
+1. Download [Immersive Portals 3.3.9.5-iris1.7](https://github.com/BooshSource/ImmersivePortalsMinor/releases/tag/v3.3.9.5-iris1.7)
+2. Place in mods folder
 3. Go to Configs folder and make a **fabric_loader_dependencies.json** that says
 ```json
 {
