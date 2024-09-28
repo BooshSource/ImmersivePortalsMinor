@@ -1,7 +1,7 @@
 package qouteall.imm_ptl.core.compat.mixin.sodium;
 
-import net.caffeinemc.mods.sodium.client.render.viewport.Viewport;
-import net.caffeinemc.mods.sodium.client.render.viewport.frustum.Frustum;
+import me.jellysquid.mods.sodium.client.render.viewport.Viewport;
+import me.jellysquid.mods.sodium.client.render.viewport.frustum.Frustum;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -13,7 +13,7 @@ public class MixinSodiumViewport {
         method = "isBoxVisible",
         at = @At(
             value = "INVOKE",
-            target = "Lnet/caffeinemc/mods/sodium/client/render/viewport/frustum/Frustum;testAab(FFFFFF)Z"
+            target = "Lme/jellysquid/mods/sodium/client/render/viewport/frustum/Frustum;testAab(FFFFFF)Z"
         )
     )
     private boolean redirectTestAab(

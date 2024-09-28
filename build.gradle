@@ -101,9 +101,9 @@ allprojects {
             transitive(false)
         })
 
-        modCompileOnly files("${project.sodium_path}")
+        modCompileOnly "${project.sodium_path}"
 
-        modCompileOnly files("${project.iris_path}")
+        modCompileOnly "${project.iris_path}"
 
         modCompileOnly("com.github.qouteall:GravityChanger:${gravity_changer_version}") {
             exclude(group: "net.fabricmc.fabric-api")
@@ -183,11 +183,11 @@ dependencies {
     modLocalRuntime "maven.modrinth:modmenu:${modmenu_version}"
 
     if (project.enable_sodium.equals('true')) {
-        modLocalRuntime files("${project.sodium_path}")
+        modLocalRuntime "${project.sodium_path}"
     }
 
     if (project.enable_iris.equals('true')) {
-        modLocalRuntime files("${project.iris_path}")
+        modLocalRuntime "${project.iris_path}"
         implementation "org.anarres:jcpp:1.4.14" // for iris
         implementation 'io.github.douira:glsl-transformer:2.0.0-pre13' // for iris
         implementation 'org.antlr:antlr4-runtime:4.11.1' // for iris

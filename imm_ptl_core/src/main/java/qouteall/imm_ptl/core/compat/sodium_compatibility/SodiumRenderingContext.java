@@ -1,6 +1,6 @@
 package qouteall.imm_ptl.core.compat.sodium_compatibility;
 
-import net.caffeinemc.mods.sodium.client.render.chunk.lists.SortedRenderLists;
+import me.jellysquid.mods.sodium.client.render.chunk.lists.SortedRenderLists;
 
 public class SodiumRenderingContext {
     public SortedRenderLists renderLists;
